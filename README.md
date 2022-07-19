@@ -43,23 +43,23 @@ Illustration below
 
  ```
 
-Mar 31 09:31:48 1freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.659318010 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11855 (rc: 32)
+Mar 31 09:31:48 1compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.659318010 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11855 (rc: 32)
 
-Mar 31 09:31:48 2freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
+Mar 31 09:31:48 2compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
 
-3DDDDfreeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
+3DDDDcompx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
 
-Mar 31 09:31:48 4freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
+Mar 31 09:31:48 4compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
 
-Mar 31 09:31:48 5freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
+Mar 31 09:31:48 5compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
 
-Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.156622971 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11859 (rc: 32)
+Mar 31 09:31:49 compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.156622971 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11859 (rc: 32)
 
 ```
 
 TFIDF based score for the log lines above (last column)
 
-We can see that the only the last line has terms that are repeated most frequently in the entire document , and gets the lowest score. Whereas the other logs have terms like <n>freeipa-** which is unique in the entire document and gets the highest score
+We can see that the only the last line has terms that are repeated most frequently in the entire document , and gets the lowest score. Whereas the other logs have terms like <n>compx-** which is unique in the entire document and gets the highest score
 
 *TFID Score*
 
@@ -67,7 +67,7 @@ Snapshot here
 
 ![TFIDF Rank](https://i.imgur.com/ZPcWfYL.png)  
 
-Original output - https://gist.github.com/alexcpn/07e40d4bb46397632f83ffdc0362e9bb#file-tfidfrank-csv
+Output - https://gist.github.com/alexcpn/07e40d4bb46397632f83ffdc0362e9bb#file-tfidfrank-csv
 
 ## Time Pattern
 
@@ -84,12 +84,12 @@ Not for the graph above, which is a proper syslog file, while below is a small s
 
 Also here https://gist.github.com/alexcpn/07e40d4bb46397632f83ffdc0362e9bb#file-output-csv
 ```
-Mar 31 09:31:48 2freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
-Mar 31 09:31:48 3DDDDfreeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
-Mar 31 09:31:48 4freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
-Mar 31 09:31:48 5freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
-Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.441979340 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11860 (rc: 32)
-Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.501112749 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11861 (rc: 32)
+Mar 31 09:31:48 2compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
+Mar 31 09:31:48 3DDDDcompx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
+Mar 31 09:31:48 4compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
+Mar 31 09:31:48 5compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
+Mar 31 09:31:49 compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.441979340 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11860 (rc: 32)
+Mar 31 09:31:49 compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.501112749 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11861 (rc: 32)
 
 ```
   
@@ -100,21 +100,21 @@ Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.50
 Log File Snippet
 
 ```
-Mar 31 09:31:48 1freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.659318010 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11855 (rc: 32)
+Mar 31 09:31:48 1compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.659318010 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11855 (rc: 32)
 
-Mar 31 09:31:48 2freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
+Mar 31 09:31:48 2compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.751333697 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11856 (rc: 32)
 
-3DDDDfreeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
+3DDDDcompx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.888424524 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11864 (rc: 32)
 
-Mar 31 09:31:48 4freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
+Mar 31 09:31:48 4compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.783381048 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11857 (rc: 32)
 
-Mar 31 09:31:48 5freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
+Mar 31 09:31:48 5compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:48.826483871 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11858 (rc: 32)
 
-Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.156622971 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11859 (rc: 32)
+Mar 31 09:31:49 compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.156622971 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11859 (rc: 32)
 
-Mar 31 09:31:49 freeipa-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.441979340 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11860 (rc: 32)
+Mar 31 09:31:49 compx-f476c9ffb-8gtc4 ns-slapd[2762]: [31/Mar/2022:09:31:49.441979340 +0000] DSRetroclPlugin - delete_changerecord: could not delete change record 11860 (rc: 32)
 
-..The above line repeated for the rest...
+..The above lines repeated ...
 
 ```
 
